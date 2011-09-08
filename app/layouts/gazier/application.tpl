@@ -6,6 +6,7 @@
 		<?php $this->render('shared/_head'); ?>
 	</head>
 	<body>
+		<?php menu('main'); ?>
 		<?php echo $content; ?>
 	</body>
 </html>

@@ -7,7 +7,7 @@
  */
 class ApplicationController extends P3\ActionController\Base
 {
-	protected $_layout = 'application.tpl';
+	protected $_layout = 'gazier/application.tpl';
 
 	protected function _init()
 	{

@@ -64,7 +64,7 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-09-08  3:45:10
+-- Dump completed on 2011-09-08  4:55:24
 CREATE DATABASE  IF NOT EXISTS `potter_kuuleilani` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `potter_kuuleilani`;
 -- MySQL dump 10.13  Distrib 5.1.34, for apple-darwin9.5.0 (i386)
@@ -85,6 +85,33 @@ USE `potter_kuuleilani`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `menus`
+--
+
+DROP TABLE IF EXISTS `menus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `menus` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `token` varchar(45) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menus`
+--
+
+LOCK TABLES `menus` WRITE;
+/*!40000 ALTER TABLE `menus` DISABLE KEYS */;
+INSERT INTO `menus` VALUES (1,'main','Main Menu','2011-09-08 04:27:12','2011-09-08 04:27:12');
+/*!40000 ALTER TABLE `menus` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `pages`
 --
 
@@ -101,7 +128,7 @@ CREATE TABLE `pages` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,8 +137,40 @@ CREATE TABLE `pages` (
 
 LOCK TABLES `pages` WRITE;
 /*!40000 ALTER TABLE `pages` DISABLE KEYS */;
-INSERT INTO `pages` VALUES (1,1,'index','Welcome','<h1>Boobs</h1><p>R NICE</p>','LOLz','2011-09-08 03:38:12','2011-09-08 03:38:12');
+INSERT INTO `pages` VALUES (1,1,'index','Welcome','<h1>Boobs</h1><p>R NICE</p>','LOLz','2011-09-08 03:38:12','2011-09-08 03:38:12'),(2,1,'about-us','About Us','<h1>About Us</h1><p>We Rox</p>','YES','2011-09-08 03:38:12','2011-09-08 03:38:12');
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menu_items`
+--
+
+DROP TABLE IF EXISTS `menu_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `menu_items` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `menu_id` int(11) NOT NULL,
+  `linkable_id` int(11) NOT NULL,
+  `linkable_type` varchar(45) NOT NULL,
+  `visible` tinyint(4) DEFAULT '1',
+  `item_type` int(11) NOT NULL,
+  `url_key` varchar(45) NOT NULL,
+  `display` varchar(45) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu_items`
+--
+
+LOCK TABLES `menu_items` WRITE;
+/*!40000 ALTER TABLE `menu_items` DISABLE KEYS */;
+INSERT INTO `menu_items` VALUES (1,1,1,'Page',1,1,'blah','Home','2011-09-08 04:27:12','2011-09-08 04:27:12'),(2,1,2,'Page',1,1,'blah2','About Us','2011-09-08 04:27:12','2011-09-08 04:27:12');
+/*!40000 ALTER TABLE `menu_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -155,4 +214,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-09-08  3:45:11
+-- Dump completed on 2011-09-08  4:55:24

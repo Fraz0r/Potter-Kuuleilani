@@ -7,9 +7,24 @@
  */
 class PagesController extends ApplicationController
 {
+	protected function _init()
+	{
+		$this->page = Page::published()->find_by_url_key($_GET['url-key']);
+
+		if(!$this->page)
+			throw new KU\Exception\PageException('Page Not Found', array(), 404);
+
+		return parent::_init();
+	}
+
 	public function show()
 	{
-		$this->render(array('text' => 'Hello World'));
+		switch($_GET['format']) {
+			case 'html':
+				break;
+			default:
+				throw new KU\Exception\PageException('Unaccepted format \'%s\' requested for \'%s\'', array($_GET['format'], $this->page->url_key));
+		}
 	}
 }
 

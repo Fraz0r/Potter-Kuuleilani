@@ -7,7 +7,7 @@ $root = dirname(dirname(__FILE__));
 define("P3\ROOT", $root);
 require($root.'/lib/P3/P3.php');
 
-if(P3::development()) {
+if(!P3::production()) {
 	ini_set("display_errors", "true");
 	error_reporting(E_ALL);
 }

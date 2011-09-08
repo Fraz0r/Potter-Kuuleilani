@@ -1,0 +1,3 @@
+[submodule "vendor/P3"]
+	path = vendor/P3
+	url = git@github.com:Fraz0r/P3.git

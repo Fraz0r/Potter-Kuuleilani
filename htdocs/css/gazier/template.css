@@ -1,0 +1,75 @@
+body {
+	font-family: "Myriad Pro", arial, sans-serif, verdana;
+	background: #060;
+}
+
+#page-wrap {
+	background: url('/images/rep/bg.jpg') top left fixed repeat-x;
+}
+
+#page {
+	background: url('/images/bg_static.jpg') top center fixed;
+}
+
+#head-con,
+	#menu-con,
+	#banner,
+	#content-con,
+	#footer-con {
+		width: 100%;
+	}
+
+#head,
+	#menu-con ul,
+	#banner,
+	#content,
+	#footer {
+		width: 958px;
+		margin: 0 auto;
+	}
+
+
+#head {
+	height: 152px;
+	position: relative;
+}
+
+#menu-con {
+	height: 34px;
+	background: url('/images/rep/menu.jpg') repeat-x;
+}
+
+#menu ul {
+}
+
+#menu ul li {
+}
+
+#menu ul li a {
+}
+
+#menu ul li a span {
+}
+
+#banner-con {
+	background: #060;
+	border-bottom: 9px solid #141414;
+	padding: 10px 0 0;
+}
+
+#banner {
+	width: 742px;
+	height: 163px;
+	margin: 0 auto -50px;
+}
+
+#banner.interior {
+	background: url('/images/banners/interior.png') no-repeat;
+}
+
+#content-con {
+}
+
+#content {
+	padding: 78px 0 0;
+}

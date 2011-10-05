@@ -21,7 +21,7 @@
 								Contact us directly: <span class="emph">808-277-8604</span>
 							</p>
 							<p id="map">
-								1600 Kapiolani Blvd, <a href="#" class="emph">View on Map</a>
+								1600 Kapiolani Blvd, <a href="http://maps.google.com/maps?q=1600+Kapiolani+Blvd,+Suite+224,+Honolulu,+HI+96813&hl=en&sll=37.0625,-95.677068&sspn=56.59387,135.263672&vpsrc=0&hnear=1600+Kapiolani+Blvd+%23224,+Honolulu,+Hawaii+96814&t=m&z=17" target="_blank" class="emph">View on Map</a>
 							</p>
 						</div>
 					</div>

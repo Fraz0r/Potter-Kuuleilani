@@ -1,19 +1,34 @@
-<h2>Heading 1</h2>
+<h2>About The Spa</h2>
 
-<p>Nunc ultricies risus non tortor dapibus semper. Donec varius lacinia enim, non molestie quam porttitor vitae. Curabitur felis ipsum, varius quis sagittis id, feugiat in nunc. Sed a ornare justo. Integer sit amet justo tincidunt sapien ultrices semper. Nulla hendrerit fermentum urna sit amet facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus quis ipsum sed odio elementum feugiat sed vitae dui. In ac nulla quam, id accumsan dui. Quisque varius consequat lectus, <b>id aliquet elit lacinia id</b>.</p>
+<p>Our highly trained and licensed massage therapists, estheticians, and technicians are handpicked for their superior skills and for their genuine desire to take care of our clients. We place the highest value on customer service and providing you with the finest treatments available in our Hawaiian Tropical environment.
 
-<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor.</p>
+Our staff will make you feel right at home while spoiling you with fabulous spa treatments.
 
-<div id="blockquote-con">
+Customized to meet the needs of your skin, our estheticians will design a personalized program that is unique to your skin type and condition.
+
+Our massages are designed for those who are in need of healing muscular aches and pains.
+
+Our body treatment are not only pampering but highly effective in the release of toxins, improved circulation, increasing the flow of nutrients while rebalancing and remineralizing at the cellular level.
+
+Feel free to include add-ons to any service, but whatever you choose, you will leave relaxed, refreshed and re-invigorated.</b>.</p>
+
+<p>In 2010 Ku'uleilani Day Spa expanded from a 2 room facility to a 5 room spa after her Living Social special debuted with the highest sales in the nation. It has been quite an adventure! Our blood, sweat and tears have paid off with the positive responses from our patrons. We look forward to the future and our continued success.</p>
+
+<!--<div id="blockquote-con">
 	<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum ipsum non felis aliquam eget commodo ante eleifend. Fusce nisi sapien, sollicitudin nec consequat id, imperdiet id metus. Mauris in leo nec eros gravida condimentum. Curabitur metus metus, tristique at </blockquote>
 
 	<cite>- Quote Example</cite>
-</div>
+</div>-->
 
-<h2>About Us Heading 2</h2>
+<h2>About Ku'uleilani</h2>
 
-<p>Nunc ultricies risus non tortor dapibus semper. Donec varius lacinia enim, non molestie quam porttitor vitae. Curabitur felis ipsum, varius quis sagittis id, feugiat in nunc. Sed a ornare justo. Integer sit amet justo tincidunt sapien ultrices semper. Nulla hendrerit fermentum urna sit amet facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus quis ipsum sed odio elementum feugiat sed vitae dui. In ac nulla quam, id accumsan dui. Quisque varius consequat lectus, id aliquet elit lacinia id.</p>
+<p>As a young lady on the island of Oahu, Ku'uleilani was taught by her grandmother the ancient art form of lomi lomi (Hawaiian massage). While living on the East Coast, she earned her massage therapy license and was given the opportunity to teach lomi lomi in New Jersey.
 
-<img style="float: right;" src="/images/stock/pool.jpg" />
+Ku'uleilani has 10 years of professional massage experience and is accredited with working with professional athletes and celebrities.
+
+As a proud Hawaiian, Ku'uleilani feels blessed to meet such amazing people and to share this unique art form called lomi lomi with all who enter her spa.
+</p>
+
+<img style="float: right;" src="/images/Prod/about1.png" />
 
 <div class="clearfix"></div>

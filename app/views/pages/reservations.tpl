@@ -1,3 +1,3 @@
 <h2>Send Request for Reservation</h2>
 
-<p>Page under construction.</p>
+<p class="red">Page under construction.</p>

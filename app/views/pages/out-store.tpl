@@ -4,14 +4,14 @@
 
 
 <div id="products">
-	<div class="product-row">
-		<div class="product-placeholder"></div>
-		<div class="product-placeholder"></div>
-		<div class="product-placeholder-lg"></div>
+	<div class="product-row clearfix">
+		<div class="product product-placeholder"></div>
+		<div class="product product-placeholder"></div>
+		<div class="product product-placeholder-lg"></div>
 	</div>
-	<div class="product-row">
-		<div class="product-placeholder"></div>
-		<div class="product-placeholder"></div>
-		<div class="product-placeholder-lg"></div>
+	<div class="product-row clearfix">
+		<div class="product product-placeholder"></div>
+		<div class="product product-placeholder"></div>
+		<div class="product product-placeholder-lg"></div>
 	</div>
 </div>

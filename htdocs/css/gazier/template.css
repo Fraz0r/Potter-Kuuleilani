@@ -1,6 +1,7 @@
 body {
 	font-family: "Myriad Pro", arial, sans-serif, verdana;
 	background: #060;
+	color: #444;
 }
 
 a {
@@ -8,12 +9,56 @@ a {
 	color: #82a62b;
 }
 
+.red {
+	color: #900;
+}
+
+#content h1,
+	#content h2,
+	#content h3 {
+		background: url('/images/ico/arrow.png') center left no-repeat;
+		font-weight: normal;
+		padding-left: 15px;
+		height: 18px;
+		font-size: 20px;
+		margin: 0 0 .8em;
+		text-transform: uppercase;
+	}
+
+#content h1.nocap,
+	#content h2.nocap,
+	#content h3.nocap {
+		text-transform: none;
+	}
+
+h1 a,
+	h2 a,
+	h3 a,
+	h4 a,
+	h5 a,
+	h6 a {
+		color: #444;
+	}
+
+#content p {
+	margin: 1.5em 0 1.5em;
+}
+
+#content blockquote {
+	background: url('/images/bg/quote.jpg') top left no-repeat;
+	padding: 10px 0 0 25px;
+}
+
+#content cite {
+	color: #82a62b;
+}
+
 #page-wrap {
-	background: url('/images/rep/bg.jpg') top left fixed repeat-x;
+	background: #fff url('/images/rep/bg.jpg') top left repeat-x;
 }
 
 #page {
-	background: url('/images/bg_static.jpg') top center fixed;
+	background: url('/images/bg_static.jpg') top center no-repeat;
 }
 
 #head-con,
@@ -173,7 +218,7 @@ a {
 }
 
 #content {
-	padding: 78px 0 0;
+	padding: 108px 0 10em;
 }
 
 #sidebar-wrap {
@@ -184,7 +229,7 @@ a {
 }
 
 #footer-con {
-	padding: 57px 0 0;
+	padding: 57px 0 70px;
 }
 
 #footer {
@@ -238,4 +283,123 @@ a {
 
 #comments-placeholder {
 	margin: 2em 0 4em;
+}
+
+.twocol #component {
+	padding-right: 270px;
+}
+
+p img.stock {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+/* Home Page */
+#index .left,
+#index .right {
+	width: 448px;
+	float: left;
+}
+
+#index .right {
+	margin-left: 4em;
+}
+
+/* About Us */
+#about-us #blockquote-con {
+	background: url('/images/stock/bed.jpg') top left no-repeat;
+	padding: 0 0 0 220px;
+	height: 151px;
+	margin: 0 0 2em;
+}
+
+#about-us #blockquote-con cite {
+	float: right;
+	margin: -10px 100px 0 0;
+}
+
+/* Services */
+#services .section {
+	margin-bottom: 8em;
+}
+
+#services .subnav {
+	text-align: center;
+}
+
+#services .subnav li {
+	display: inline-block;
+	margin: 0 1em;
+}
+
+/* Specials */
+#monthly-specials .special {
+	margin-bottom: 5em;
+}
+
+/* Reviews */
+#reviews #blockquote-con {
+	background: url('/images/stock/bed.jpg') top left no-repeat;
+	padding: 0 0 0 220px;
+	height: 151px;
+	margin: 0 0 2em;
+}
+
+#reviews #blockquote-con cite {
+	float: right;
+	margin: -10px 100px 0 0;
+}
+
+/* Our Store */
+#products {
+}
+
+#products .product-row {
+}
+
+#products .product-row .product {
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+#products .product-placeholder {
+	height: 223px;
+	width: 222px;
+	background: url('/images/placeholder/sm_product.png') no-repeat;
+}
+
+#products .product-placeholder-lg {
+	width: 222px;
+	height: 401px;
+	background: url('/images/placeholder/lg_product.png') no-repeat;
+}
+
+/* Beauty Tips */
+#videos {
+}
+
+#videos .video {
+	width: 300px;
+	height: 220px;
+	background: #d9d7d2;
+	float: left;
+	margin: 0 0 50px;
+	position: relative;
+}
+
+#videos .video .description {
+	position: absolute;
+	bottom: 1px;
+	right: 0px;
+	width: 299px;
+	background: #fff;
+	height: 70px;
+}
+
+#videos .video .description p {
+	padding-left: 10px;
+}
+
+#videos .video.first {
+	margin-right: 200px;
 }

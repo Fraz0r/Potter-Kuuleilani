@@ -9,7 +9,7 @@
 		<title><?php if(isset($title)) echo $title.' | '; ?>Kuuleilani Day Spa</title>
 		<?php $this->render('shared/_head'); ?>
 	</head>
-	<body id="<?php echo $_GET['url-key']; ?>" class="<?php canRenderSidebar() ? 'twocol' : 'onecol'; ?>">
+	<body id="<?php echo $_GET['url-key']; ?>" class="<?php echo canRenderSidebar() ? 'twocol' : 'onecol'; ?>">
 		<div id="page-wrap">
 			<div id="page">
 				<div id="head-con">
@@ -52,7 +52,9 @@
 				<div id="content-con">
 					<div id="content">
 						<?php $this->render('shared/_sidebar'); ?>
-						<?php echo $content; ?>
+						<div id="component">
+							<?php echo $content; ?>
+						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>

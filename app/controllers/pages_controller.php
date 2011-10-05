@@ -14,6 +14,8 @@ class PagesController extends ApplicationController
 		if(!$this->page)
 			throw new KU\Exception\PageException('Page Not Found', array(), 404);
 
+		$this->title = $this->page->title;
+
 		return parent::_init();
 	}
 

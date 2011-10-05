@@ -1,0 +1,77 @@
+/*
+    Document   : base
+    Created on : Oct 4, 2011, 10:51:15 PM
+    Author     : eric
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root {
+    display: block;
+}
+
+body {
+	margin: 50px 0;
+}
+
+header {
+	background-color: #046805;
+	box-shadow: 0px 5px 10px #000000;
+	font-family: Geneva,Arial,Helvetica,sans-serif;
+	padding: 5px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+header a {
+	color: white;
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #ddd;
+}
+
+header a .note {
+	color: #b00101;
+	font-size: 0.8em;
+}
+
+footer {
+	background-color: #046805;
+	bottom: 0;
+	box-shadow: 0 -5px 10px #000;
+	color: #fff;
+	font-family: Verdana, Areal, sans-serif;
+	font-size: 0.8em;
+	padding: 2px;
+	/* fsck IE */
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+section {
+	margin: 0 20px;
+}
+
+section h1 {
+	font-family: 'Courier New',Courier,monospace;
+	text-shadow: 2px 2px 5px #aaa;
+}
+
+section form label {
+	display: inline-block;
+	vertical-align: top;
+	width: 120px;
+}

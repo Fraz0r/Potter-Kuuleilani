@@ -24,13 +24,9 @@ class PagesController extends AdminController
 			$this->add_message('Page saved');
 			$this->redirect('/admin/pages');
 		} else {
+			$this->add_error('Failed to save page');
 			$this->render('add');
 		}
-	}
-
-	public function edit()
-	{
-		$this->page = Page::find($_GET['id']);
 	}
 
 	public function delete()
@@ -40,6 +36,11 @@ class PagesController extends AdminController
 		$this->page->delete();
 		$this->add_message('Page deleted');
 		$this->redirect('/admin/pages');
+	}
+
+	public function edit()
+	{
+		$this->page = Page::find($_GET['id']);
 	}
 
 	public function index()

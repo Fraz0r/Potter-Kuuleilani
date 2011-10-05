@@ -14,6 +14,16 @@ class ApplicationController extends P3\ActionController\Base
 		 $this->user = User::current();
 		 $this->meta = array();
 	}
+
+	protected function add_error($str)
+	{
+		$_SESSION['error'] = $str;
+	}
+
+	protected function add_message($str)
+	{
+		$_SESSION['message'] = $str;
+	}
 }
 
 ?>

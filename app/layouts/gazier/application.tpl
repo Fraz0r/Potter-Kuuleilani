@@ -9,7 +9,7 @@
 		<title><?php if(isset($title)) echo $title.' | '; ?>Kuuleilani Day Spa</title>
 		<?php $this->render('shared/_head'); ?>
 	</head>
-	<body>
+	<body id="<?php echo $_GET['url-key']; ?>">
 		<div id="page-wrap">
 			<div id="page">
 				<div id="head-con">
@@ -32,11 +32,35 @@
 				<div id="banner-con">
 					<?php if($_GET['url-key'] != 'index'): ?>
 						<div id="banner" class="interior"></div>
+					<?php else: ?>
+						<div id="banner-big" class="home"></div>
+						<div id="banner" class="home">
+							<ul>
+								<li class="reservations">
+									<a href="/reservations"></a>
+								</li>
+								<li class="services">
+									<a href="/services"></a>
+								</li>
+								<li class="promotions">
+									<a href="#"></a>
+								</li>
+							</ul>
+						</div>
 					<?php endif; ?>
 				</div>
 				<div id="content-con">
 					<div id="content">
-						<?php echo $content; ?>
+						<?php //echo $content; ?>
+						<?php 
+							switch($_GET['url-key']){
+								case 'index':
+						?>
+						Home
+						<?php
+									break;
+							}
+						?>
 					</div>
 				</div>
 			</div>
@@ -52,10 +76,10 @@
 				</p>
 				<div id="social">
 					<p>
-						Follow us on <a id="facebook" href="#">Facebook</a><a id="twitter" href="#">Twitter</a><a id="rss" href="#">RSS</a>
+						Follow us on: <a id="facebook" href="#">Facebook</a><a id="twitter" href="#">Twitter</a><a id="rss" href="#">RSS</a>
 					</p>
 				</div>
-				<p id="syndicate">&copy; Kuuleilani Day Spa</p>
+				<p id="syndicate">&copy; <?php echo date("Y"); ?> Kuuleilani Day Spa</p>
 			</div>
 		</div>
 	</body>

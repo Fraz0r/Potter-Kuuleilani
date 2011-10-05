@@ -3,6 +3,11 @@ body {
 	background: #060;
 }
 
+a {
+	text-decoration: none;
+	color: #82a62b;
+}
+
 #page-wrap {
 	background: url('/images/rep/bg.jpg') top left fixed repeat-x;
 }
@@ -30,8 +35,46 @@ body {
 
 
 #head {
+	color: #686e73;
 	height: 152px;
 	position: relative;
+}
+
+#head a,
+	#head .emph {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: .4em;
+	color: #82a62b;
+}
+
+#head #contact .emph {
+	padding-right: 17px;
+}
+
+#head #contact #phone .emph {
+	background: url('/images/ico/phone.png') top right no-repeat;
+}
+
+#head #contact #map .emph {
+	background: url('/images/ico/map.png') top right no-repeat;
+}
+
+#logo {
+	position: absolute;
+	left: 45px;
+	top: 32px;
+}
+
+#head > #contact {
+	position: absolute;
+	right: 27px;
+	top: 58px;
+}
+
+#head > #contact p {
+	font-size: 14px;
+	line-height: 17px;
 }
 
 #menu-con {
@@ -39,16 +82,29 @@ body {
 	background: url('/images/rep/menu.jpg') repeat-x;
 }
 
-#menu ul {
+#menu-con .p3cms-menu {
+	padding: 0;
+	line-height: 34px;
+	text-align: center;
 }
 
-#menu ul li {
+#menu-con .p3cms-menu li {
+	float: left;
+	margin: 0 20px;
 }
 
-#menu ul li a {
+#menu-con .p3cms-menu li a {
+	font-size: 16px;
+	color: #eff2ef;
+	text-shadow: 0px 0px 2px #000;
 }
 
-#menu ul li a span {
+#menu-con .p3cms-menu li a:hover {
+	color: #fff;
+	text-shadow: 0px 0px 3px #fff;
+}
+
+#menu-con .p3cms-menu li a span {
 }
 
 #banner-con {
@@ -67,9 +123,108 @@ body {
 	background: url('/images/banners/interior.png') no-repeat;
 }
 
+#banner.home {
+	width: 974px;
+	margin-bottom: -75px;
+}
+
+#banner.home ul {
+	padding: 0;
+}
+
+#banner.home li {
+	padding: 0;
+	height: 191px;
+	display: block;
+	float: left;
+}
+
+#banner.home li a {
+	display: block;
+	height: 100%;
+}
+
+#banner.home li.reservations {
+	width: 371px;
+	background: url('/images/banners/menu/home/reservations.png') no-repeat;
+}
+
+#banner.home li.services {
+	width: 241px;
+	background: url('/images/banners/menu/home/services.png') no-repeat;
+}
+
+#banner.home li.promotions {
+	width: 361px;
+	background: url('/images/banners/menu/home/promotions.png') no-repeat;
+}
+
+#banner-big {
+	margin: -15px auto -105px;
+}
+
+#banner-big.home {
+	background: url('/images/banners/big/home.png');
+	width: 995px;
+	height: 416px;
+}
+
 #content-con {
 }
 
 #content {
 	padding: 78px 0 0;
+}
+
+#footer-con {
+	padding: 57px 0 0;
+}
+
+#footer {
+	height: 80px;
+	position: relative;
+	color: #808080;
+}
+
+#footer ul {
+	margin: 0;
+}
+
+#footer a {
+	color: #7aa218;
+}
+
+#footer .p3cms-menu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#footer .p3cms-menu li {
+	float: left;
+	padding-left: 20px;
+}
+
+#footer #address {
+	position: absolute;
+	line-height: 1.5em;
+	top: 0px;
+	left: 0px;
+}
+
+#footer #syndicate {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#footer #social {
+	position: absolute;
+	top: 20px;
+	right: 0px;
+}
+
+#footer #social a {
+	color: #000;
+	padding-left: 20px;
 }

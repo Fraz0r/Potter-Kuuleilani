@@ -25,4 +25,12 @@ function menu($key)
 	echo $ret;
 }
 
+function canRenderSidebar($key = null)
+{
+	if(is_null($key))
+		$key = $_GET['url-key'];
+
+	return !in_array($_GET['url-key'], array('index', 'beauty-tips', 'our-store'));
+}
+
 ?>

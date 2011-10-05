@@ -9,12 +9,12 @@
 		<title><?php if(isset($title)) echo $title.' | '; ?>Kuuleilani Day Spa</title>
 		<?php $this->render('shared/_head'); ?>
 	</head>
-	<body id="<?php echo $_GET['url-key']; ?>">
+	<body id="<?php echo $_GET['url-key']; ?>" class="<?php canRenderSidebar() ? 'twocol' : 'onecol'; ?>">
 		<div id="page-wrap">
 			<div id="page">
 				<div id="head-con">
 					<div id="head">
-						<a href="/"><img id="logo" src="/images/logo.png" /></a>
+						<h1><a href="/" title="Kuuleilani Day Spa"><img id="logo" src="/images/logo.png" /></a></h1>
 
 						<div id="contact">
 							<p id="phone">
@@ -37,10 +37,10 @@
 						<div id="banner" class="home">
 							<ul>
 								<li class="reservations">
-									<a href="/reservations"></a>
+									<a href="/reservations.html"></a>
 								</li>
 								<li class="services">
-									<a href="/services"></a>
+									<a href="/services.html"></a>
 								</li>
 								<li class="promotions">
 									<a href="#"></a>
@@ -51,16 +51,9 @@
 				</div>
 				<div id="content-con">
 					<div id="content">
-						<?php //echo $content; ?>
-						<?php 
-							switch($_GET['url-key']){
-								case 'index':
-						?>
-						Home
-						<?php
-									break;
-							}
-						?>
+						<?php $this->render('shared/_sidebar'); ?>
+						<?php echo $content; ?>
+						<div class="clearfix"></div>
 					</div>
 				</div>
 			</div>

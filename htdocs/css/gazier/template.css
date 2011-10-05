@@ -176,6 +176,13 @@ a {
 	padding: 78px 0 0;
 }
 
+#sidebar-wrap {
+	text-align: right;
+	float: right;
+	width: 258px;
+	padding: 0 0 4em;
+}
+
 #footer-con {
 	padding: 57px 0 0;
 }
@@ -227,4 +234,8 @@ a {
 #footer #social a {
 	color: #000;
 	padding-left: 20px;
+}
+
+#comments-placeholder {
+	margin: 2em 0 4em;
 }

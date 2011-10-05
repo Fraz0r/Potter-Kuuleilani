@@ -16,6 +16,7 @@ class AdminController extends \ApplicationController
 	{
 		parent::_init();
 
+		// wtfbomb?
 		$this->user = true; // lol access granted
 
 		if(static::$_requiresLogin && !$this->user)

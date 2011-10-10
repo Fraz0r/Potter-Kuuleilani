@@ -18,7 +18,7 @@ function menu($key)
 	$x = 0;
 	if(0 < ($c = count($_cache[$key]->menu_items)))
 		foreach($_cache[$key]->menu_items as $i)
-			$ret .= '<li id="item-'.$i->id().'" class="'.($x++ == 0 ? 'first' : ($x == $c ? 'last' : '')).'"><a href="'.$i->path().'"><span>'.$i->display.'</span></a></li>';
+			$ret .= '<li id="item-'.$i->id().'" class="'.($i->linkable->url_key).($x++ == 0 ? ' first' : ($x == $c ? ' last' : '')).'"><a href="'.$i->path().'"><span>'.$i->display.'</span></a></li>';
 
 	$ret .= '</ul>';
 

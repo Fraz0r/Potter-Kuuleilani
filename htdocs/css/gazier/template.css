@@ -2,6 +2,7 @@ body {
 	font-family: "Myriad Pro", arial, sans-serif, verdana;
 	background: #060;
 	color: #444;
+	font-size: 14px;
 }
 
 a {
@@ -136,20 +137,49 @@ h1 a,
 #menu-con .p3cms-menu li {
 	float: left;
 	margin: 0 15px;
+
+	transition: transform .2s linear;
+	-moz-transition: -moz-transform .2s linear;
+	-o-transition: -o-transform .2s linear;
+	-webkit-transition: -webkit-transform .2s linear;
 }
 
 #menu-con .p3cms-menu li a {
 	font-size: 16px;
 	color: #eff2ef;
 	text-shadow: 0px 0px 2px #000;
+	transition: text-shadow .2s ease-in;
+	-moz-transition: text-shadow .2s ease-in;
+	-o-transition: text-shadow .2s ease-in;
+	-webkit-transition: text-shadow .2s ease-in;
 }
 
-#menu-con .p3cms-menu li a:hover {
+#menu-con .p3cms-menu li:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+}
+
+#menu-con .p3cms-menu li:hover a {
 	color: #fff;
 	text-shadow: 0px 0px 3px #fff;
 }
 
 #menu-con .p3cms-menu li a span {
+}
+
+#index #menu-con .p3cms-menu li.index a,
+#about-us #menu-con .p3cms-menu li.about-us a,
+#services #menu-con .p3cms-menu li.services a,
+#monthly-specials #menu-con .p3cms-menu li.monthly-specials a,
+#reviews #menu-con .p3cms-menu li.reviews a,
+#reservations #menu-con .p3cms-menu li.reservations a,
+#our-store #menu-con .p3cms-menu li.our-store a,
+#beauty-tips #menu-con .p3cms-menu li.beauty-tips a,
+#contact #menu-con .p3cms-menu li.contact a {
+	color: #fe57a1;
+	text-shadow: 0px 0px 3px #b70084;
 }
 
 #banner-con {
@@ -294,6 +324,67 @@ p img.stock {
 	margin: 0 1em 1em 0;
 }
 
+.form-table {
+}
+
+.form-table td {
+	padding: .5em;
+}
+
+.form-table label {
+	display: block;
+	color: #608409;
+	padding: .4em 0;
+}
+
+.form-table input,
+.form-table select,
+.form-table textarea {
+	background: #ececee;
+	border: 1px solid #999;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.form-table button,
+.form-table input[type=submit],
+.form-table input[type=button] {
+	width: auto;
+	background: #344c01;
+	border: 1px solid #344c01;
+	color: #344c01;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 6px 9px;
+	position: relative;
+	text-decoration: none;
+	behavior: url(/js/PIE/PIE.php);
+ 	text-shadow: 1px 1px 1px #eaff8a;
+	border-radius: 5px;
+	background: -moz-linear-gradient(top, #8faa26 0%, #bcde43 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #8faa26), color-stop(100%, #bcde43));
+	background: -o-linear-gradient(top, #8faa26 0%, #bcde43 100%);
+	-pie-background: linear-gradient(top, #8faa26 0%, #bcde43 100%);
+	-webkit-box-shadow: inset 1px 1px 1px #eaff8a;
+	-moz-box-shadow: inset 1px 1px 1px #eaff8a;
+	box-shadow: inset 1px 1px 1px #eaff8a;
+}
+
+.form-table button.mousedown,
+.form-table input[type=submit].mousedown,
+.form-table input[type=button].mousedown {
+	transform: scale(.89);
+	-webkit-transform: scale(.89);
+	-moz-transform: scale(.89);
+	-o-transform: scale(.89);
+}
+
+.form-table label,
+.form-table select {
+}
+
+
 /* Home Page */
 #index .left,
 #index .right {
@@ -330,6 +421,75 @@ p img.stock {
 #services .subnav li {
 	display: inline-block;
 	margin: 0 1em;
+}
+
+#services .service-table-wrap {
+	background: url('/images/bg/table_left.png') top left no-repeat;
+	width: 678px;
+}
+
+#services .service-table-wrap-inner {
+	background: url('/images/bg/table_right.png') top right no-repeat;
+	padding: 0 7px;
+}
+
+#services .service-table-wrap table {
+	background: url('/images/bg/table_right.png') top right no-repeat;
+	width: 100%;
+}
+
+#services .service-table-wrap table > thead > tr > th {
+	background: url('/images/rep/table_head.png') repeat-x;
+	height: 47px;
+}
+
+#services .service-table-wrap table > thead > tr > th {
+	color: #a1d622;
+	text-shadow: 0px 0px 3px #000;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 47px;
+	text-align: center;
+	border-bottom: 5px solid #b8b8ba;
+}
+
+#services .service-table-wrap table > thead > tr > th.first {
+	color: #fff;
+}
+
+#services .service-table-wrap table > tbody > tr > td {
+	line-height: 47px;
+	border-top: 1px solid #ececee;
+	border-bottom: 1px solid #ececee;
+	border-left: 1px dotted #aaa;
+	text-align: center;
+	font-weight: bold;
+}
+
+#services .service-table-wrap table > tbody > tr > td.first {
+	font-weight: normal;
+}
+
+#services .service-table-wrap table > tbody > tr > td:first-child {
+	border-left: 1px solid #ececee;
+}
+
+#services .service-table-wrap table > tbody > tr > td:last-child {
+	border-right: 1px solid #ececee;
+}
+
+#services .service-table-wrap table > tbody > tr.odd > td {
+	background: #ececee;
+}
+
+#services .service-table-wrap table > tfoot > tr > td p {
+	position: relative;
+	top: -10px;
+	font-weight: normal;
+	text-align: right;
+	font-style: italic;
+	color: #999;
+	padding-right: 2em;
 }
 
 /* Specials */
@@ -402,4 +562,27 @@ p img.stock {
 
 #videos .video.first {
 	margin-right: 200px;
+}
+
+/* Reservations */
+.reservation-note {
+	margin: 2em 0 0;
+	padding: 2em 0 2em 4em;
+	border-width: 1px 0 1px; 
+	border-style: dotted;
+	border-color: #666;
+}
+
+.reservation-note p {
+	margin: 0 !important;
+}
+
+
+/* Misc */
+.req-astr {
+	display: none;
+}
+
+.no-full select {
+	width: auto;
 }

@@ -77,5 +77,22 @@
 				<p id="syndicate">&copy; <?php echo date("Y"); ?> Kuuleilani Day Spa</p>
 			</div>
 		</div>
+		<script type="text/javascript" src="/js/jquery-validation/lib/jquery.js"></script>
+		<script type="text/javascript" src="/js/jquery.validate.js"></script>
+		<script type="text/javascript" src="/js/application.js"></script>
+		<!--[if lt IE 7 ]>
+		<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+		<script>
+				CFInstall.check({
+						onmissing: function(){window.location.href = "/ie6"}
+				});
+		</script>
+		<![endif]-->
+
+
+		<!--[if lte IE 8 ]>
+				<script src="/js/selectivizr-min.js?v=1"></script>
+		<![endif]-->
+		<script src="/js/modernizr.js"></script>
 	</body>
 </html>

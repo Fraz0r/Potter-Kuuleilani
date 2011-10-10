@@ -15,7 +15,7 @@
 </div>
 
 <div class="special">
-	<h3 class="nocap">Monthly Special THREE</h2>
+	<h2 class="nocap">Monthly Special THREE</h2>
 
 	<img src="/images/stock/lg_breakfast.jpg" />
 

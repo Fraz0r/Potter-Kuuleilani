@@ -13,7 +13,7 @@
 
 	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
 
-	<img class="table-placeholder" src="/images/placeholder/table.png" />
+	<?php KU\Component::render('services show massage'); ?>
 
 	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
 </div>
@@ -23,7 +23,7 @@
 
 	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
 
-	<img class="table-placeholder" src="/images/placeholder/table.png" />
+	<?php KU\Component::render('services show facials'); ?>
 
 	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
 </div>
@@ -33,7 +33,7 @@
 
 	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
 
-	<img class="table-placeholder" src="/images/placeholder/table.png" />
+	<?php KU\Component::render('services show treatments'); ?>
 
 	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
 </div>

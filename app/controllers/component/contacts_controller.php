@@ -18,7 +18,7 @@ class ContactsController extends \ApplicationController
 
 		if($this->contact->save()) {
 			$this->add_message('Thank you for contacting us');
-			$this->redirect(':back');
+			$this->redirect('/thank-you.html');
 		} else {
 			$this->render('form');	
 		}

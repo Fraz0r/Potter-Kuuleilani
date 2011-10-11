@@ -16,7 +16,7 @@ class ReservationsController extends \P3\ActionController\Base
 
 		$this->reservation->save();
 
-		$this->redirect(':back');
+		$this->redirect('/thank-you.html');
 	}
 }
 

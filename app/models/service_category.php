@@ -13,7 +13,8 @@ class ServiceCategory extends P3\ActiveRecord\Base
 	public static $_hasMany = array(
 		'columns' => array(
 			'class' => 'ServiceCategoryColumn',
-			'fk'    => 'service_category_id'
+			'fk'    => 'service_category_id',
+			'sort'  => 'sort'
 		),
 		'services' => array(
 			'class' => 'Service',

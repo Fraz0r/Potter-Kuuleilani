@@ -358,6 +358,9 @@ p img.stock {
 	color: #608409;
 	border-color: #608409;
 	box-shadow: 0px 0px 5px #8faa26;
+	-webkit-box-shadow: 0px 0px 5px #8faa26;
+	-moz-box-shadow: 0px 0px 5px #8faa26;
+	-o-box-shadow: 0px 0px 5px #8faa26;
 	transform: scale(1.02);
 	-moz-transform: scale(1.02);
 	-o-transform: scale(1.02);
@@ -684,4 +687,7 @@ input.error {
 	border: #800;
 	color: #900;
 	box-shadow: 0px 0px 5px #900;
+	-webkit-box-shadow: 0px 0px 5px #900;
+	-moz-box-shadow: 0px 0px 5px #900;
+	-o-box-shadow: 0px 0px 5px #900;
 }

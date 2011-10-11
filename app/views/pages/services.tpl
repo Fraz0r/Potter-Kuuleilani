@@ -1,6 +1,6 @@
 <h2>Services</h2>
 
-<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
+<p>We place the highest value on customer service and providing you with the finest treatments available in our Hawaiian Tropical environment. Our staff will make you feel right at home while spoiling you with fabulous spa treatments. Customized to meet the needs of your skin, our estheticians will design a personalized program that is unique to your skin type and condition. </p>
 
 <ul class="subnav">
 	<li><a href="#massage" name="top">Massage</a></li>
@@ -11,31 +11,31 @@
 <div class="section">
 	<h3><a name="massage">Massages</a></h3>
 
-	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
+	
 
 	<?php KU\Component::render('services show massage'); ?>
 
-	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
+	
 </div>
 
 <div class="section">
 	<h3><a name="facials">Facials and Waxing</a></h3>
 
-	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
+	
 
 	<?php KU\Component::render('services show facials'); ?>
 
-	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
+	
 </div>
 
 <div class="section">
 	<h3><a name="treatments">Treatments and Wraps</a></h3>
 
-	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
+	
 
 	<?php KU\Component::render('services show treatments'); ?>
 
-	<p>Etiam erat neque, interdum ut condimentum sit amet, faucibus in est. In faucibus tempus lorem, eget malesuada enim pellentesque sit amet. Mauris gravida, nisi nec sollicitudin cursus, ligula arcu semper felis, sed aliquet augue lectus eget sem. Quisque non nisi nunc. Mauris dapibus quam dolor. Maecenas vitae massa nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae convallis nunc. Suspendisse porttitor posuere dui vel faucibus.</p>
+
 </div>
 
 <?php KU\Component::render('services show misc'); ?>

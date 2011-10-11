@@ -4,7 +4,7 @@
 		<div id="reservations-side">
 			<h4>Reservations</h4>
 
-			<p>Send us a message with your desired room type, arrival date and number of nights you'd like to reserve, and <strong>We&rsquo;ll contact you in no time</strong>.</p>
+			<p>Send us a message with your desired service type and arrival date you'd like to reserve, and <strong>We&rsquo;ll contact you ASAP.</strong>.</p>
 		</div>
 
 		<div id="comments">

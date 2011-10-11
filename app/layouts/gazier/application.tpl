@@ -71,7 +71,7 @@
 				</p>
 				<div id="social">
 					<p>
-						Follow us on: <a id="facebook" href="#">Facebook</a><a id="twitter" href="#">Twitter</a><a id="rss" href="#">RSS</a>
+						Follow us on: <a id="facebook" href="http://www.facebook.com/kuuleilanidayspalomilomi" target ="_blank">Facebook</a><a id="twitter" href="http://twitter.com/#!/kuuleilanispahi" target ="_blank">Twitter</a>
 					</p>
 				</div>
 				<p id="syndicate">&copy; <?php echo date("Y"); ?> Kuuleilani Day Spa</p>

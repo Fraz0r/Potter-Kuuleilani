@@ -9,7 +9,7 @@ namespace KU\Component;
  */
 class Contact extends Base
 {
-	private static $_categories = array('Requesting more information', 'Complaint', 'Other');
+	private static $_categories = array('Requesting more information', 'Other');
 
 
 //- Public

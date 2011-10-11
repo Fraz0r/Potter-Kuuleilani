@@ -43,7 +43,7 @@
 									<a href="/services.html"></a>
 								</li>
 								<li class="promotions">
-									<a href="#"></a>
+									<a href="/monthly-specials.html"></a>
 								</li>
 							</ul>
 						</div>

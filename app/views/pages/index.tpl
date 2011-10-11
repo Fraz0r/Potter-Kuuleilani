@@ -1,7 +1,7 @@
 <div class="left">
 	<h2>Featured Video</h2>
 
-	<p><img class="stock" src="/images/stock/chairs.png" />Enjoy a striking destination inspired by the extraordinary landscape, melding the offerings of thrilling in outdoor recreation and renowned spa treatments, with the hot & unsurpassed beauty of the City of Seven Hills.<div class="clearfix"></div></p>
+	<div class="stock"><iframe width="448" height="258" src="http://www.youtube.com/embed/ny_Y9muyknc" frameborder="0" allowfullscreen></iframe></div><div class="clearfix"></div>
 </div>
 
 <div class="right">

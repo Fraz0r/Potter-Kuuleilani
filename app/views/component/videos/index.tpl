@@ -8,6 +8,7 @@
 			<div class="video-row clearfix">
 		<?php endif; ?>
 		<div class="video <?php echo $mod ? 'first' : 'last'; ?>">
+			<?php echo $video->youtube_embed; ?>
 			<div class="description"><p><?php echo $video->description; ?></p></div>
 		</div>
 		<?php if($mod != 1): ?>

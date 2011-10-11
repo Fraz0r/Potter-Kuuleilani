@@ -209,7 +209,7 @@ h1 a,
 
 #banner.home li {
 	padding: 0;
-	height: 191px;
+	height: 196px;
 	display: block;
 	float: left;
 }
@@ -220,12 +220,12 @@ h1 a,
 }
 
 #banner.home li.reservations {
-	width: 371px;
+	width: 369px;
 	background: url('/images/banners/menu/home/reservations.png') no-repeat;
 }
 
 #banner.home li.services {
-	width: 241px;
+	width: 243px;
 	background: url('/images/banners/menu/home/services.png') no-repeat;
 }
 
@@ -240,8 +240,8 @@ h1 a,
 
 #banner-big.home {
 	background: url('/images/banners/big/home.png');
-	width: 995px;
-	height: 416px;
+	width: 994px;
+	height: 417px;
 }
 
 #content-con {
@@ -355,6 +355,7 @@ p img.stock {
 .form-table input:focus,
 .form-table select:focus,
 .form-table textarea:focus {
+	color: #608409;
 	border-color: #608409;
 	box-shadow: 0px 0px 5px #8faa26;
 	transform: scale(1.02);
@@ -557,11 +558,11 @@ p img.stock {
 
 #videos .video {
 	width: 300px;
-	height: 220px;
 	background: #d9d7d2;
 	float: left;
 	margin: 0 0 50px;
 	position: relative;
+	padding: 0 0 70px;
 }
 
 #videos .video .description {
@@ -672,4 +673,15 @@ p img.stock {
 
 .no-full select {
 	width: auto;
+}
+
+label.error {
+	color: #900;
+}
+
+input:focus.error,
+input.error {
+	border: #800;
+	color: #900;
+	box-shadow: 0px 0px 5px #900;
 }

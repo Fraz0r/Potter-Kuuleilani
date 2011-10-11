@@ -1,7 +1,5 @@
 RewriteEngine On
 
-SetEnv	P3_Env	staging
-
 # SEO Shiz
 RewriteCond %{REQUEST_URI} ^/index.html
 RewriteRule ^.*$ / [R=301,NC,QSA,L]

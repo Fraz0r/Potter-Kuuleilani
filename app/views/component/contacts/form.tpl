@@ -30,7 +30,7 @@
 		<tr>
 			<td>&nbsp;</td>
 			<td>
-				<?php $f->submitField('Submit message', 'Submitting message...', array('style' => 'float: right;')); ?>
+				<?php $f->submitField('Submit message', null, array('style' => 'float: right;')); ?>
 			</td>
 		</tr>
 	</tbody>

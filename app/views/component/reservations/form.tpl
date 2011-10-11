@@ -1,4 +1,4 @@
-<?php $f = form::forModel(array('component', $reservation)); ?>
+<?php $f = form::forModel(array('component', $reservation), array('class' => 'validate')); ?>
 <table class="form-table">
 	<tbody>
 		<tr>
@@ -25,7 +25,7 @@
 </table>
 <div class="reservation-note">
 	<div style="float: right;" class="form-table">
-		<?php $f->submitField('Send now', 'Sending...'); ?>
+		<?php $f->submitField('Send now'); ?>
 	</div>
 	<p>Please note this is not an actual reservation, but only a request for one.<br /><strong>We will contact you for a confirmation</strong> shortly after.  Thank you!</p>
 </div>

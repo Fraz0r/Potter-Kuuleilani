@@ -1,11 +1,15 @@
 <div class="left">
-	<h2>Our Services</h2>
+	<h2>Featured Video</h2>
 
 	<p><img class="stock" src="/images/stock/chairs.png" />Enjoy a striking destination inspired by the extraordinary landscape, melding the offerings of thrilling in outdoor recreation and renowned spa treatments, with the hot & unsurpassed beauty of the City of Seven Hills.<div class="clearfix"></div></p>
 </div>
 
 <div class="right">
-	<h2>Our Services</h2>
+	<h2>Destination: Relaxation</h2>
 
-	<p><img class="stock" src="/images/stock/breakfast.png" /> Indulge in our delicious cuisine infused with organic ingredients and prepared by expert chefs. We are providing a wide array of fine dining establishments offering stunning views from every turn in a relaxing and cosy atmosphere.<div class="clearfix"></div></p>
+	<p><img class="stock" src="/images/Prod/relax1.png" /> Ku'uleilani Day Spa is the perfect destination for your relaxation.
+Our highly trained therapists, with several years experience, will customize an individual massage session.
+Dedicated to your specific needs. In our Tropical Serene Spa, our therapist's will provide a safe and
+professional environment.
+Book now to start your road to relaxation. You'll thank us later.<div class="clearfix"></div></p>
 </div>

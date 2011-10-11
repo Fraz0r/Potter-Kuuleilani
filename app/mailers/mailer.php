@@ -9,7 +9,7 @@ class Mailer extends \P3\ActionMailer\Base
 {
 	public function deliver_new_contact($contact)
 	{
-		$this->to = 'tim.frazier@gmail.com';
+		$this->to = 'kuuleilani8@yahoo.com';
 		$this->from = 'info@kuuleilanidayspa.com';
 		$this->subject = 'New Contact Form Submitted';
 
@@ -18,7 +18,7 @@ class Mailer extends \P3\ActionMailer\Base
 
 	public function deliver_new_reservation($reservation)
 	{
-		$this->to = 'tim.frazier@gmail.com';
+		$this->to = 'kuuleilani8@yahoo.com';
 		$this->from = 'info@kuuleilanidayspa.com';
 		$this->subject = 'New Contact Reservation Submitted';
 

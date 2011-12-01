@@ -33,7 +33,7 @@
 					<?php if($_GET['url-key'] != 'index'): ?>
 						<div id="banner" class="interior"></div>
 					<?php else: ?>
-						<div id="banner-big" class="home"></div>
+						<?php KU\Component::render('slideshow display'); ?>
 						<div id="banner" class="home">
 							<ul>
 								<li class="reservations">

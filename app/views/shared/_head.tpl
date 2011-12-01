@@ -6,6 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <?php html::head(); ?>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+<script type="text/javascript" src="/js/app.slideshow.js"></script>
 <link rel="stylesheet" href="/css/reset.css" />
 <link rel="stylesheet" href="/css/html5.css" />
 <link rel="stylesheet" href="/css/gazier/template.css" />

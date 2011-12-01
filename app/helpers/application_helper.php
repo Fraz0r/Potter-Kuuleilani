@@ -33,4 +33,24 @@ function canRenderSidebar($key = null)
 	return !in_array($_GET['url-key'], array('index', 'beauty-tips', 'our-store'));
 }
 
+function cycle(array $to_cycle)
+{
+	static $_static_count;
+	static $_static_cycle;
+	static $_static_index;
+
+	if(empty($_static_cycle) || count(array_diff_assoc($_static_cycle, $to_cycle))) {
+		$_static_index = 0;
+		$_static_count = count($to_cycle);
+		$_static_cycle = $to_cycle;
+	} else {
+		$_static_index++;
+
+		if($_static_index >= $_static_count)
+			$_static_index = 0;
+	}
+
+	return $_static_cycle[$_static_index];
+}
+
 ?>

@@ -16,6 +16,8 @@ $map->withOptions(array('namespace' => 'component', 'prefix' => ''), function($c
 	$cart->resources('line_items', array('only' => array('create', 'delete')));
 
 	$com->connect('/cart/checkout', array('controller' => 'carts', 'action' => 'checkout'), 'post');
+	$com->connect('/cart/confirm', array('controller' => 'carts', 'action' => 'confirm'), 'get');
+	$com->connect('/cart/complete', array('controller' => 'carts', 'action' => 'complete'), 'get');
 	$com->connect('/cart/thank-you', array('controller' => 'carts', 'action' => 'thank_you'), 'get');
 });
 

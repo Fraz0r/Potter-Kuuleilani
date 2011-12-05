@@ -33,7 +33,12 @@ class ApplicationController extends P3\ActionController\Base
 
 	protected function _find_cart()
 	{
-		$this->cart = isset($_SESSION->cart_id) ? Cart::find($_SESSION->cart_id) : false;
+		if(isset($_SESSION->cart_id))
+			$cart_id = $_SESSION->cart_id;
+		elseif(isset($_GET['cart_id']))
+			$cart_id = $_GET['cart_id'];
+
+		$this->cart = isset($cart_id) ? Cart::find($cart_id) : false;
 
 		if(!$this->cart || !isset($_SESSION['cart_id'])) {
 				$this->cart = new Cart(array('session_id' => session_id()));
@@ -47,14 +52,7 @@ class ApplicationController extends P3\ActionController\Base
 
 	protected function _gateway()
 	{
-		return(isset(self::$_gateway) 
-					? self::$_gateway
-						: new P3\Merchant\Billing\Gateway\PayPalExpress(array(
-							'login' => 'USER_LOGIN',
-							'password' => 'USER_PASS',
-							'signature' => 'SIG'
-						))
-		);
+		return KU\Gateway::singleton();
 	}
 }
 

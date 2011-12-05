@@ -11,7 +11,8 @@ class CartsController extends \ApplicationController
 {
 	protected function _init()
 	{
-		$this->_find_cart();
+		if($_GET['action'] != 'thank-you')
+			$this->_find_cart();
 
 		return parent::_init();
 	}
@@ -23,15 +24,49 @@ class CartsController extends \ApplicationController
 
 		$paypal_response = $this->_gateway()->setup_purchase($this->cart->calculateTotal(), array(
 			'ip'                => $_SERVER['REMOTE_ADDR'],
-			'return_url'        => $host.'/cart/thank-you',
-			'cancel_return_url' => $host.'/cart'
+			'return_url'        => $host.'/cart/confirm?cart_id='.$this->cart->id(),
+			'cancel_return_url' => $host.'/cart?cart_id'.$this->cart->id()
 		));
 
-		var_dump($paypal_response);
-		die;
+		$this->redirect($this->_gateway()->redirect_url_for($paypal_response->token()));
+	}
+
+	public function confirm()
+	{
+		if(!isset($_GET['token']))
+			$this->redirect('/cart');
+
+		$details_response = $this->_gateway()->details_for($_GET['token']);
+
+		if(!$details_response->wasSuccessfull()) {
+			$this->message = $details_response->message;
+			$this->render('error');
+		}
+
+		$this->address = $details_response->address();
+	}
+
+	public function complete()
+	{
+		$purchase = $this->_gateway()->purchase($this->cart->calculateTotal(), array(
+			'ip'       => $_SERVER['REMOTE_ADDR'],
+			'payer_id' => $_GET['payer_id'],
+			'token'    => $_GET['token']
+		));
+
+		if(!$purchase->wasSuccessfull()) {
+			$this->message = $purchase->message;
+			$this->render('error');
+			return false;
+		}
+
+		session_destroy();
+		$this->redirect('/cart/thank-you?authorization='.$purchase->authorization);
 	}
 
 	public function show() { }
+
+	public function thank_you() { }
 
 	public function update()
 	{

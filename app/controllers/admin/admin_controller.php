@@ -16,8 +16,7 @@ class AdminController extends \ApplicationController
 	{
 		parent::_init();
 
-		// wtfbomb?
-		$this->user = true; // lol access granted
+		$this->user = isset($_SESSION->token) && $_SESSION->token == UserSessionsController::AUTH_TOKEN;
 
 		if(static::$_requiresLogin && !$this->user)
 			if($_GET['controller'] != 'admin/user_sessions')

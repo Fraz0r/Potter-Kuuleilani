@@ -17,6 +17,7 @@ root {
 
 body {
 	margin: 50px 0;
+	background: #efefef !important;
 }
 
 header {
@@ -74,4 +75,20 @@ section form label {
 	display: inline-block;
 	vertical-align: top;
 	width: 120px;
+}
+
+table tbody td {
+	text-align: left !important;
+	padding: 0 1em;
+}
+
+table td.utils li {
+	display: block;
+	padding: 0 .5em;
+	float: left;
+}
+
+.mceEditor {
+	width: 900px;
+	height: 500px;
 }

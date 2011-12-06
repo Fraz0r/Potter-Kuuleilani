@@ -2,10 +2,12 @@
 <html>
 	<head>
 		<base href="/" />
+		<link rel="stylesheet" href="css/gazier/template.css" />
 		<link rel="stylesheet" href="css/admin/base.css" />
 		<link rel="stylesheet" href="css/south-street/jquery-ui-1.8.16.custom.js" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/application.js"></script>
 		<script type="text/javascript" src="js/tiny_mce/tiny_mce_dev.js"></script>
 		<script type="text/javascript">
 			tinyMCE.init({
@@ -30,9 +32,9 @@
 	<body>
 		<header>
 			<nav>
-				<a href="admin/">Home</a>
 				<a href="admin/pages">Pages</a>
-				<a href="">Comments <sup class="note">(5)</sup></a>
+				<a href="admin/service_categories">Services</a>
+				<a href="admin/products">Products</a>
 			</nav>
 		</header>
 		<section>

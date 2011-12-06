@@ -3,7 +3,9 @@
 $map->withOptions(array('namespace' => 'admin'), function($admin){
 	$admin->resources('pages');
 	$admin->resources('products');
-	$admin->connect('/login', array('controller' => 'user_sessions', 'action' => 'login'));
+	$admin->resources('service_categories');
+	$admin->resources('user_sessions');
+	$admin->connect('/login', array('controller' => 'user_sessions', 'action' => 'add'));
 	$admin->connect('/logout', array('controller' => 'user_sessions', 'action' => 'destroy'));
 	$admin->root(array('controller' => 'dashboards', 'action' => 'show'));
 });

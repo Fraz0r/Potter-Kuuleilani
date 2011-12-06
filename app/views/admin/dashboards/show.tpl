@@ -1,2 +1,1 @@
-<p>I needs a view :(</p>
-<p>Find my ass here: <?php echo __FILE__; ?></p>
+<p>Select an Item from the menu above to manage your site.</p>

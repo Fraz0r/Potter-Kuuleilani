@@ -5,8 +5,7 @@
 	<?php $f->labelFor('description'); ?>
 	<?php $f->textArea('description'); ?>
 	<br />
-	<?php $f->labelFor('content'); ?>
-	<?php $f->textArea('content', array('class' => 'mceEditor')); ?>
+	<?php $f->textArea('body', array('class' => 'mceEditor')); ?>
 	<br />
-	<?php $f->submitField('Save', 'Saving', array('class' => 'ui-button')); ?>
+	<?php $f->submitField('Save', 'Saving...', array('class' => 'ui-button')); ?>
 <?php $f->close(); ?>

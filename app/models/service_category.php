@@ -8,6 +8,7 @@
 class ServiceCategory extends P3\ActiveRecord\Base
 {
 	public static $_table = 'service_categories';
+	public static $_controller = 'service_categories';
 
 //- Relations
 	public static $_hasMany = array(

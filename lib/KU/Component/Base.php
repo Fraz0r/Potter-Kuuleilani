@@ -37,12 +37,14 @@ abstract class Base
 		$ret = call_user_func_array(array($this, $method), $args);
 
 		if(in_array($ret, self::$_ACCEPTABLE_RESPONSES))
-			$this->renderView($method);
+			return $this->renderView($method);
+
+		return false;
 	}
 
 	public function renderView($method)
 	{
-		$this->_view->display($method);
+		return $this->_view->render($method);
 	}
 
 

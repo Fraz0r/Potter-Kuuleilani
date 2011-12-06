@@ -1,7 +1,7 @@
 <div class="left">
 	<h2>Featured Video</h2>
 
-	<div class="stock"><iframe width="448" height="258" src="http://www.youtube.com/embed/ny_Y9muyknc" frameborder="0" allowfullscreen></iframe></div><div class="clearfix"></div>
+	<div class="stock"><iframe width="448" height="258" src="http://www.youtube.com/embed/4hDsABu75xw" frameborder="0" allowfullscreen></iframe></div><div class="clearfix"></div>
 </div>
 
 <div class="right">

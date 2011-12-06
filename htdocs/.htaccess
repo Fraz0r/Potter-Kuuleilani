@@ -1,6 +1,6 @@
 RewriteEngine On
 
-SetEnv	P3_Env	tim
+SetEnv	P3_Env	staging
 
 # SEO Shiz
 RewriteCond %{REQUEST_URI} ^/index.html

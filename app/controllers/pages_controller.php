@@ -23,7 +23,6 @@ class PagesController extends ApplicationController
 	{
 		switch($_GET['format']) {
 			case 'html':
-				$this->render($_GET['url-key']); //Remove this when CMS done
 				break;
 			default:
 				throw new KU\Exception\PageException('Unaccepted format \'%s\' requested for \'%s\'', array($_GET['format'], $this->page->url_key));

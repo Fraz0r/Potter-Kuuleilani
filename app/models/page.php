@@ -22,6 +22,14 @@ class Page extends P3\ActiveRecord\Base
 			'conditions' => array('published' => 1)
 		)
 	);
+
+//- Public
+	public function parsedBody()
+	{
+		return preg_replace_callback('/\{\{([^\}]*)\}\}/', function($matches){
+			return \KU\Component::render($matches[1]);
+		}, $this->body);
+	}
 }
 
 ?>

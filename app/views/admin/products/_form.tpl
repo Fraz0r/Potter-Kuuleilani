@@ -6,7 +6,12 @@
 		</tr>
 		<tr>
 			<th><?php $f->labelFor('image'); ?></th>
-			<td><?php $f->file('image'); ?></td>
+			<td>
+				<?php $f->file('image'); ?>
+				<?php if(!$product->isNew()): ?>
+					<span class="note">Leave blank to keep current image</span>
+				<?php endif; ?>
+			</td>
 		</tr>
 		<tr>
 			<th><?php $f->labelFor('price'); ?></th>
@@ -22,4 +27,3 @@
 		</tr>
 	</tbody>
 </table>
-<?php $f->submitField('Add Item'); ?>

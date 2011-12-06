@@ -2,4 +2,5 @@
 
 <?php $this->f = \form::forModel(array('admin', $product)); ?>
 <?php $this->render('_form'); ?>
+<?php $this->f->submitField('Add Item'); ?>
 <?php $this->f->close(); ?>
